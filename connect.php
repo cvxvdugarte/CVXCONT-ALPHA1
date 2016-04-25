@@ -46,22 +46,22 @@ if ($mysqli->connect_errno) {
     <div class="wrapper">
       <section>
     <table>
-               <tr><strong>Nombre</strong>
-               <td><form>
+               <tr>
+               <td><strong>Nombre</strong><form>
                    <input type="text" name="nombre"><br>
                    </form>
                </td>
                </tr>
                
-                 <tr><strong>Rif</strong>
-               <td><form>
+                 <tr>
+               <td><strong>Rif</strong><form>
                    <input type="text" name="Rif"><br>
                    </form>
                </td>
                </tr>
                
-                 <tr><strong>Nombre</strong>
-               <td><form>
+                 <tr>
+               <td><strong>direccion</strong><form>
                    <input type="text" name="direccion"><br>
                    </form>
                </td>
