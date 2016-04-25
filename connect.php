@@ -53,18 +53,15 @@ if ($mysqli->connect_errno) {
           </tr>
           <tr>
                 <td><form>
-                    First name:<br>
-                   <input type="text" name="nombre"><br>
+                                       <input type="text" name="nombre"><br>
                    </form>
                 </td>
                 <td><form>
-                    Direccion:<br>
-                   <input type="text" name="direccion"><br>
+                                      <input type="text" name="direccion"><br>
                     </form>
                 </td>
                 <td><form>
-                    Rif:<br>
-                   <input type="text" name="rif"><br>
+                                      <input type="text" name="rif"><br>
                     </form>
                 </td>
             </tr>
