@@ -43,8 +43,8 @@ if ($mysqli->connect_errno) {
         </svg>
       </div>
 
-    <div class="container">
-
+    <div class="container-fluid">
+<section>
     <table border="0">
                <tr>
                <td><strong>Nombre</strong><form>
@@ -66,6 +66,7 @@ if ($mysqli->connect_errno) {
                    </form>
                </td>
                </tr>
+               </section>
      </table>
    
   
