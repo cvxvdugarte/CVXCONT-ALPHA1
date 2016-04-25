@@ -47,30 +47,31 @@ if ($mysqli->connect_errno) {
       <section>
     <table>
 <tr>
-  <td><strong><?php
-echo "fuck";
-?></strong></td>
+  <td><strong>
+
+   </strong></td>
   <td><strong>Horas</strong></td>
   <td><strong>Horario</strong></td>
 </tr>
  
 <tr>
-  <td>CSS</td>
-  <td>20</td>
-  <td>16:00 - 20:00</td>
+  <td><form>
+     First name:<br>
+    <input type="text" name="nombre"><br>
+      </form>
+  </td>
+  <td><form>
+     Direccion:<br>
+     <input type="text" name="direccion"><br>
+     </form>
+  </td>
+  <td><form>
+      Rif:<br>
+     <input type="text" name="rif"><br>
+      </form>
+  </td>
 </tr>
  
-<tr>
-  <td>HTML</td>
-  <td>20</td>
-  <td>16:00 - 20:00</td>
-</tr>
- 
-<tr>
-  <td>Dreamweaver</td>
-  <td>60</td>
-  <td>16:00 - 20:00</td>
-</tr>
 </table>
       </section>
   
