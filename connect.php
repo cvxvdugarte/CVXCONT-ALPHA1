@@ -45,7 +45,7 @@ if ($mysqli->connect_errno) {
 
     <div class="container">
       <section>
-    <table>
+    <table border="0">
                <tr>
                <td><strong>Nombre</strong><form>
                    <input type="text" name="nombre"><br>
