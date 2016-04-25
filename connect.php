@@ -1,5 +1,5 @@
 <?php
-$mysqli = mysqli_connect("ejemplo.com", "usuario", "contraseña", "basedatos");
+$mysqli = mysqli_connect("	mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
 }
