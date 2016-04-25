@@ -42,7 +42,9 @@ if ($mysqli->connect_errno) {
         <text x="15" y="15" fill="gray">App administrativa y contable</text>
         </svg>
       </div>
-
+<?php
+echo $resultado;
+?>
     <div class="wrapper">
       <section>
     <table>
