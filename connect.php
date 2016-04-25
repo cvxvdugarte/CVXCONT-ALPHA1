@@ -21,7 +21,7 @@
       <?php
 $user = $_POST["inputUser"]; 
 $pass = $_POST["inputPassword"]; 
-$mysqli = mysqli_connect("mysql.hoxstinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
 }
@@ -42,14 +42,14 @@ if ($mysqli->connect_errno) {
         <text x="15" y="15" fill="gray">App administrativa y contable</text>
         </svg>
       </div>
-<?php
-echo $resultado;
-?>
+
     <div class="wrapper">
       <section>
     <table>
 <tr>
-  <td><strong>Curso</strong></td>
+  <td><strong><?php
+echo $resultado;
+?></strong></td>
   <td><strong>Horas</strong></td>
   <td><strong>Horario</strong></td>
 </tr>
