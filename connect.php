@@ -44,7 +44,7 @@ if ($mysqli->connect_errno) {
       </div>
 
     <div class="container">
-      <section>
+
     <table border="0">
                <tr>
                <td><strong>Nombre</strong><form>
@@ -67,7 +67,7 @@ if ($mysqli->connect_errno) {
                </td>
                </tr>
      </table>
-      </section>
+   
   
   
   </body>
