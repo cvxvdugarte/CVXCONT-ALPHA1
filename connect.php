@@ -46,33 +46,29 @@ if ($mysqli->connect_errno) {
     <div class="wrapper">
       <section>
     <table>
-<tr>
-  <td><strong>
-
-   </strong></td>
-  <td><strong>Horas</strong></td>
-  <td><strong>Horario</strong></td>
-</tr>
- 
-<tr>
-  <td><form>
-     First name:<br>
-    <input type="text" name="nombre"><br>
-      </form>
-  </td>
-  <td><form>
-     Direccion:<br>
-     <input type="text" name="direccion"><br>
-     </form>
-  </td>
-  <td><form>
-      Rif:<br>
-     <input type="text" name="rif"><br>
-      </form>
-  </td>
-</tr>
- 
-</table>
+           <tr>
+               <td><strong>Nombre</strong></td>
+               <td><strong>Direccion</strong></td>
+               <td><strong>Rif</strong></td>
+          </tr>
+          <tr>
+                <td><form>
+                    First name:<br>
+                   <input type="text" name="nombre"><br>
+                   </form>
+                </td>
+                <td><form>
+                    Direccion:<br>
+                   <input type="text" name="direccion"><br>
+                    </form>
+                </td>
+                <td><form>
+                    Rif:<br>
+                   <input type="text" name="rif"><br>
+                    </form>
+                </td>
+            </tr>
+     </table>
       </section>
   
   
