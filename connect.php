@@ -43,7 +43,7 @@ if ($mysqli->connect_errno) {
         </svg>
       </div>
 
-    <div class="wrapper">
+    <div class="container">
       <section>
     <table>
                <tr>
