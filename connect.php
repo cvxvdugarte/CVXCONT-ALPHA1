@@ -48,7 +48,7 @@ if ($mysqli->connect_errno) {
     <table>
 <tr>
   <td><strong><?php
-echo $resultado;
+echo "fuck";
 ?></strong></td>
   <td><strong>Horas</strong></td>
   <td><strong>Horario</strong></td>
