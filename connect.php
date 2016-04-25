@@ -26,9 +26,8 @@ if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
 }
 $resultado = mysqli_query($mysqli, "SELECT codigo 
-FROM  `USUARIOS` where codigo = ".$user);
-$fila = mysqli_fetch_assoc($resultado);
-echo $fila['_msg'];
+FROM  USUARIOS where codigo = ".$user);
+
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
@@ -66,6 +65,7 @@ if ($mysqli->connect_errno) {
                    </form>
                </td>
                </tr>
+               <?php echo $resultado; ?>
                </section>
      </table>
    
