@@ -51,7 +51,9 @@ echo $fila['_msg'];
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
     echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
-}
+} 
+else
+{echo "good job";}
 ?>
   </head>
   <body>
@@ -63,9 +65,7 @@ if ($mysqli->connect_errno) {
 
     <div class="wrapper">
       <section>
-    <?php
-    echo "good job";
-    ?>
+    
       </section>
   
   
