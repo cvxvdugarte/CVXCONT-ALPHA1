@@ -12,17 +12,16 @@
     <script src="javascripts/respond.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-
   </head>
   <body>
-  <div id="jumbotron">
+  <div>
   <?php
 $user = $_POST["inputUser"]; 
 $pass = $_POST["inputPassword"]; 
-$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = mysqli_connect("my44sql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
-}
+                                   }
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
