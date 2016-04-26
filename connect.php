@@ -28,11 +28,10 @@ else
        echo "good";
      }
 
-$query = mysqli_query($mysqli,"SELECT CODIGO
+$resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
-$row = mysqli_fetch_array($query)
-$resultado = $row["codigo"];
-echo $resultado;
+
+echo strval($resultado);
 
 ?> 
   </body>
