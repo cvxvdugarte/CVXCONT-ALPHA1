@@ -32,7 +32,7 @@ $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 echo $resultado;
 
- 
+?> 
   </body>
 </html>
 
