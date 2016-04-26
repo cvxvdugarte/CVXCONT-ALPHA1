@@ -12,7 +12,11 @@
     <script src="javascripts/respond.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-      <?php
+
+  </head>
+  <body>
+  <div id="jumbotron">
+  <?php
 $user = $_POST["inputUser"]; 
 $pass = $_POST["inputPassword"]; 
 $mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
@@ -29,9 +33,8 @@ else
      }
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
-?>
-  </head>
-  <body>
+?>  
+  </div>  
       <div id="header">
            <svg height="30" width="500">
            <text x="15" y="15" fill="gray">App administrativa y contable</text>
