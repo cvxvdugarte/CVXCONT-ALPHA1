@@ -16,13 +16,11 @@
   <body>
   <div>
   <?php
-$user = $_POST["inputUser"]; 
-$pass = $_POST["inputPassword"]; 
-$mysqli = mysqli_connect("my44sql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
                                    }
-$mysqli = new mysqli("mysql.hos44tinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
@@ -30,17 +28,12 @@ else
      {
        echo "good";
      }
+$user = $_POST["inputUser"]; 
+$pass = $_POST["inputPassword"]; 
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 ?>  
-  </div>  
-      <div id="header">
-           <svg height="30" width="500">
-           <text x="15" y="15" fill="gray">App administrativa y contable</text>
-           </svg>
-      </div>
-      <div class="container-fluid">
-          <section>
+
     <table border="0">
              <tr>
                <td><b>Nombre</b><form>
@@ -63,8 +56,8 @@ FROM  USUARIOS");
                </td>
              </tr>
      </table>
-           </section>  
-  
+         
+ </div> 
   
   </body>
 </html>
