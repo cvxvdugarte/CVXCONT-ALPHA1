@@ -37,9 +37,7 @@ FROM  USUARIOS");
 ?>
   </head>
   <body>
-    <?php
-    echo $user.$pass.$resultado;
-    ?>
+
       <div id="header">
         <svg height="30" width="500">
         <text x="15" y="15" fill="gray">App administrativa y contable</text>
@@ -69,7 +67,7 @@ FROM  USUARIOS");
                    </form>
                </td>
                </tr>
-               <?php echo $resultado; ?>
+              
                </section>
      </table>
    
