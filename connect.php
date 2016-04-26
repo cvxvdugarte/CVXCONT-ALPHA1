@@ -32,6 +32,9 @@ $user = $_POST["inputUser"];
 $pass = $_POST["inputPassword"]; 
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
+echo $user;
+echo $pass;
+echo $resultado;
 ?>  
 
     <table border="0">
