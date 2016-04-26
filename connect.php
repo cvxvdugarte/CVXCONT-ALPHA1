@@ -31,7 +31,7 @@ else
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 
-echo strval($resultado);
+echo $POST["inputUser"];
 
 ?> 
   </body>
