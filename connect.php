@@ -16,23 +16,31 @@
   <body>
   <?php
 $mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
-if (mysqli_connect_errno($mysqli)) {
-    echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
-                                   }
+if ($mysqli === false){
+	die("ERROR: No se estableció la conexión. ". mysqli_connect_error());
+} 
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
-else
-     {
-       echo "good";
-       echo $POST["inputUser"];
-     }
 
-$resultado = mysqli_query($mysqli,"SELECT CODIGO
-FROM  USUARIOS");
-
-
+$sql = "SELECT CODIGO FROM  USUARIOS";
+if ($result = $mysqli->query($sql) ){
+	if ($result->num_rows > 0 ){
+ 
+		                 while($row = $result->fetch_array() ){
+			               echo $row[0]. " : ". trim($row[1])."\n";
+	                          	}
+ 
+	                	$result->close();
+	                   } else {
+		echo "NO se encontró ningún registro que coincida con su busqueda.";
+	                   }
+ 
+                     } else {
+	echo "Error: No fue posible ejecutar la consulta $sql ". $mysqli->error;
+}
+$mysqli->close();
 
 ?> 
   </body>
