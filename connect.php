@@ -26,12 +26,13 @@ if ($mysqli->connect_errno) {
 else
      {
        echo "good";
+       echo $POST["inputUser"];
      }
 
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 
-echo $POST["inputUser"];
+
 
 ?> 
   </body>
