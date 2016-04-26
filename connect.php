@@ -14,9 +14,8 @@
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
   </head>
   <body>
-
   <?php
-/*$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
                                    }
@@ -31,34 +30,8 @@ else
 
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
+echo $resultado;
 
-echo $resultado;*/
-//Conexion con la base
-mysql_connect("mysql.hostinger.es","u754135709_vddb","H4NZ0h4tt0r1"); 
-
-//selección de la base de datos con la que vamos a trabajar 
-mysql_select_db("u754135709_dbvd"); 
-
-//Ejecutamos la sentencia SQL
-$result=mysql_query("select * from usuarios");
-?>
-<table align="center">
-<tr>
-<th>Nombre</th>
-<th>Teléfono</th>
-</tr>
-<?
-//Mostramos los registros
-while ($row=mysql_fetch_array($result))
-{
-echo '<tr><td>'.$row["codigo"].'</td>';
-echo '<td>'.$row["clave"].'</td></tr>';
-}
-mysql_free_result($result)
-?>
-
-
-    
  
   </body>
 </html>
