@@ -28,7 +28,7 @@ else
        echo "good";
      }
 
-$resultado = mysqli_query("SELECT CODIGO
+$resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 echo $resultado;
 
