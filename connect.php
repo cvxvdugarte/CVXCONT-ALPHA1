@@ -28,9 +28,9 @@ else
        echo "good";
      }
 
-$resultado = mysqli_query($mysqli,"SELECT CODIGO
-FROM  USUARIOS");
-echo $resultado['codigo'];
+$resultado = ("SELECT CODIGO
+FROM  USUARIOS WHERE CODIGO = $POST[inputUser]");
+echo $resultado;
 
 ?> 
   </body>
