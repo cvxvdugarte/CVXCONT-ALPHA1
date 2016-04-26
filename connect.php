@@ -31,13 +31,16 @@ $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
-$resultado = mysqli_query($mysqli, "SELECT codigo 
+else
+     {
+       echo "good";
+     }
+$resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
 
 ?>
   </head>
   <body>
-
       <div id="header">
         <svg height="30" width="500">
         <text x="15" y="15" fill="gray">App administrativa y contable</text>
