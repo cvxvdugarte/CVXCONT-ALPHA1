@@ -30,7 +30,7 @@ else
 
 $resultado = mysqli_query($mysqli,"SELECT CODIGO
 FROM  USUARIOS");
-echo $resultado;
+echo $resultado['codigo'];
 
 ?> 
   </body>
