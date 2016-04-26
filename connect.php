@@ -28,8 +28,8 @@ else
        echo "good";
      }
 
-$resultado = mysql_query("SELECT CODIGO
-FROM  USUARIOS WHERE CODIGO =".$POST[inputUser]);
+$resultado = mysqli_query("SELECT CODIGO
+FROM  USUARIOS");
 echo $resultado;
 
 ?> 
