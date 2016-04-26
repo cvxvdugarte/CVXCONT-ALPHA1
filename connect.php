@@ -22,7 +22,7 @@ $mysqli = mysqli_connect("my44sql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r
 if (mysqli_connect_errno($mysqli)) {
     echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
                                    }
-$mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+$mysqli = new mysqli("mysql.hos44tinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
