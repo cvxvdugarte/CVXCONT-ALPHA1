@@ -24,7 +24,7 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
 
-$sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_POST["codigo"]."'" ;
+$sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_GET["codigo"]."'" ;
 if ($result = $mysqli->query($sql) ){
 	if ($result->num_rows > 0 ){
  
