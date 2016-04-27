@@ -24,8 +24,8 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
 
-$sql = "SELECT CODIGO FROM  USUARIOS";
-/*if ($result = $mysqli->query($sql) ){
+$sql = "SELECT CODIGO,PASS FROM  USUARIOS WHERE".$POST[inputUser]."= CODIGO AND ".$POST[inputUser]."= PASS";
+if ($result = $mysqli->query($sql) ){
 	if ($result->num_rows > 0 ){
  
 		                 while($row = $result->fetch_array() ){
@@ -39,7 +39,7 @@ $sql = "SELECT CODIGO FROM  USUARIOS";
  
                      } else {
 	echo "Error: No fue posible ejecutar la consulta $sql ". $mysqli->error;
-}*/
+}
 $mysqli->close();
 
 ?> 
