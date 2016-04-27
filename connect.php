@@ -43,9 +43,9 @@ if ($mysqli->connect_errno) {
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
 
-//$consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre); 
+$consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre); 
 $consulta1->$mysqli->query("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre);
-//$consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password); 
+$consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password); 
 $consulta2->$mysqli->query("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password);
 if(!$consulta1){ 
     echo "usuario no existe"; 
