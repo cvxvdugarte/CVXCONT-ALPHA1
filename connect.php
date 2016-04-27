@@ -43,8 +43,7 @@ if ($mysqli->connect_errno) {
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
 
-
-$consultaa =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO =".$nombre.""); 
+//$consultaa =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO =".$nombre.""); 
 //$result = mysqli_query($con,"SELECT `note` FROM `glogin_users` WHERE email = '".$email."'");
 /*$consulta1 = $mysqli->query($consultaa);
 $consultab =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password.""); 
@@ -52,12 +51,12 @@ $consulta2 = $mysqli->query($consultab);*/
 /*$resultado = mysqli_query($conexion,$sentenciaSQL);
 $resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
 $resultados['dato'];*/
-$resultado = mysqli_query($mysqli,$consultaa);
-
-
-echo strval($resultado);
-
+//$resultado = mysqli_query($mysqli,$consultaa);
+//echo strval($resultado);
 //echo $consulta2;
+$statment = $mysqli->prepare("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ?");
+$statement->bind_param('s', $nombre);
+$statement->execute();
 $mysqli->close();
 
 ?> 
