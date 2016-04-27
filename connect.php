@@ -47,15 +47,8 @@ $consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre);
 $consulta1 = $mysqli->query($consulta1);
 $consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password); 
 $consulta2 = $mysqli->query($consulta2);
-if(!$consulta1){ 
-    echo "usuario no existe"; 
-               } 
-else{ 
-        if(!$consulta1){echo "clave invalida";}	
-        else
-        { echo  $consulta1;
-           echo  $consulta2;}
-     }                      	
+echo   $consulta1;
+echo $consulta2;
 $mysqli->close();
 
 ?> 
