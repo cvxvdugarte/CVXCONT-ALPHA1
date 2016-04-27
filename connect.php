@@ -24,7 +24,7 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
 
-$sql = "SELECT CODIGO FROM  USUARIOS WHERE ".$HTTP_POST_VARS["inputUser"] . " = CODIGO AND " .$HTTP_POST_VARS["inputUser"] . " = CLAVE";
+$sql = "SELECT CODIGO FROM  USUARIOS ";
 if ($result = $mysqli->query($sql) ){
 	if ($result->num_rows > 0 ){
  
@@ -41,7 +41,7 @@ if ($result = $mysqli->query($sql) ){
 	echo "Error: No fue posible ejecutar la consulta $sql ". $mysqli->error;
 }
 $mysqli->close();
-
+echo $_POST["inputUser"];
 ?> 
   </body>
 </html>
