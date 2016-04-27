@@ -15,10 +15,10 @@
   </head>
   <body>
   <?php
-$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
-if ($mysqli === false){
+//$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
+/*if ($mysqli === false){
 	die("ERROR: No se estableció la conexión. ". mysqli_connect_error());
-} 
+} */
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
@@ -43,14 +43,19 @@ if ($mysqli->connect_errno) {
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
 
-$consulta = mysqli_query (mysqli,"SELECT CODIGO, CLAVE FROM  USUARIOS WHERE CODIGO = '.$nombre.' AND password = '.$password.'"); 
-
-if(!$consulta){ 
+$consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre); 
+$consulta1->$mysqli->query($consulta1);
+$consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password); 
+$consulta2->$mysqli->query($consulta2);
+if(!$consulta1){ 
     echo "usuario no existe"; 
-} 
+               } 
 else{ 
-    print "Bienvenido"; 
-} 
+        if(!$consulta1){echo "clave invalida";}	
+        else
+        { echo  $consulta1;
+           echo  $consulta2;}
+     }                      	
 $mysqli->close();
 
 ?> 
