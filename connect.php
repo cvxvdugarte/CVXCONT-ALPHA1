@@ -42,6 +42,7 @@ if ($mysqli->connect_errno) {
 }*/
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
+echo   $nombre;
 
 $consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre); 
 $consulta1 = $mysqli->query($consulta1);
