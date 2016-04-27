@@ -44,9 +44,9 @@ $nombre = $_POST["codigo"];
 $password = $_POST["password"]; 
 echo   $nombre;
 
-$consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ".$nombre); 
+$consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = $nombre"); 
 $consulta1 = $mysqli->query($consulta1);
-$consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password); 
+$consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = $password"); 
 $consulta2 = $mysqli->query($consulta2);
 echo   $consulta1;
 echo $consulta2;
