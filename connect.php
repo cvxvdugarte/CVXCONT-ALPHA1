@@ -41,7 +41,7 @@ if ($result = $mysqli->query($sql) ){
 	echo "Error: No fue posible ejecutar la consulta $sql ". $mysqli->error;
 }
 $mysqli->close();
-echo $_POST["inputUser"];
+echo $_POST["usuario"];
 ?> 
   </body>
 </html>
