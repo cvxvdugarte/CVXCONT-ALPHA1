@@ -45,11 +45,12 @@ $password = $_POST["password"];
 echo   $nombre;
 
 $consulta1 =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO ='.$nombre.'); 
+/*$result = mysqli_query($con,"SELECT `note` FROM `glogin_users` WHERE email = '".$email."'");
 $consulta1 = $mysqli->query($consulta1);
 $consulta2 =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = '.$password.'); 
-$consulta2 = $mysqli->query($consulta2);
+$consulta2 = $mysqli->query($consulta2);*/
 echo   $consulta1;
-echo $consulta2;
+//echo $consulta2;
 $mysqli->close();
 
 ?> 
