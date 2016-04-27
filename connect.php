@@ -42,14 +42,14 @@ if ($mysqli->connect_errno) {
 }*/
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
-echo   $nombre;
+
 
 $consultaa =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO =".$nombre.""); 
 //$result = mysqli_query($con,"SELECT `note` FROM `glogin_users` WHERE email = '".$email."'");
 $consulta1 = $mysqli->query($consultaa);
 $consultab =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password.""); 
 $consulta2 = $mysqli->query($consultab);
-echo   $consulta1;
+if ($consulta1===$consulta2){echo "good job";}
 //echo $consulta2;
 $mysqli->close();
 
