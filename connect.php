@@ -49,7 +49,8 @@ $consultaa =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO =".$nombre."");
 $consulta1 = $mysqli->query($consultaa);
 $consultab =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password.""); 
 $consulta2 = $mysqli->query($consultab);
-echo $consulta2.$consulta1;
+echo $consulta2;
+echo $consulta1;
 //echo $consulta2;
 $mysqli->close();
 
