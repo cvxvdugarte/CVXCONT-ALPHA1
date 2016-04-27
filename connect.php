@@ -24,7 +24,7 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
 
-$sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_POST["codigo"]."'" ;
+//$sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_POST["codigo"]."'" ;
 /*if ($result = $mysqli->query($sql) ){
 	if ($result->num_rows > 0 ){
  
@@ -43,7 +43,7 @@ $sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_POST["codigo"]."'" ;
 $nombre = $_POST["codigo"]; 
 $password = $_POST["password"]; 
 
-$consulta = mysqli_query ("SELECT * FROM registro WHERE usuario = '.$nombre.' AND password = '.$password.'"); 
+$consulta = mysqli_query ("SELECT CODIGO, CLAVE FROM  USUARIOS WHERE CODIGO = '.$nombre.' AND password = '.$password.'"); 
 
 if(!$consulta){ 
     echo "usuario no existe"; 
