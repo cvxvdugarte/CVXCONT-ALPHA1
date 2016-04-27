@@ -53,9 +53,9 @@ $consulta2 = $mysqli->query($consultab);*/
 $resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
 $resultados['dato'];*/
 $resultado = mysqli_query($mysqli,$consultaa);
-$resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
 
-echo $resultados;
+
+echo strval($resultado);
 
 //echo $consulta2;
 $mysqli->close();
