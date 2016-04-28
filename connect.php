@@ -15,49 +15,12 @@
   </head>
   <body>
   <?php
-//$mysqli = mysqli_connect("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
-/*if ($mysqli === false){
-	die("ERROR: No se estableció la conexión. ". mysqli_connect_error());
-} */
 $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
 } 
 
-//$sql = "SELECT CODIGO FROM  USUARIOS WHERE CODIGO =" ."'".$_POST["codigo"]."'" ;
-/*if ($result = $mysqli->query($sql) ){
-	if ($result->num_rows > 0 ){
- 
-		                 while($row = $result->fetch_array() ){
-			               echo $row[0]. " : ". trim($row[1])."\n";
-	                          	}
- 
-	                	$result->close();
-	                   } else {
-		echo "NO se encontró ningún registro que coincida con su busqueda.";
-	                   }
- 
-                     } else {
-	echo "Error: No fue posible ejecutar la consulta $sql ". $mysqli->error;
-}*/
-$nombre = $_POST["codigo"]; 
-$password = $_POST["password"]; 
 
-//$consultaa =("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO =".$nombre.""); 
-//$result = mysqli_query($con,"SELECT `note` FROM `glogin_users` WHERE email = '".$email."'");
-/*$consulta1 = $mysqli->query($consultaa);
-$consultab =("SELECT USUARIO_ID  USUARIOS WHERE CLAVE = ".$password.""); 
-$consulta2 = $mysqli->query($consultab);*/
-/*$resultado = mysqli_query($conexion,$sentenciaSQL);
-$resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
-$resultados['dato'];*/
-//$resultado = mysqli_query($mysqli,$consultaa);
-//echo strval($resultado);
-//echo $consulta2;
-$statment = $mysqli->prepare("SELECT USUARIO_ID FROM  USUARIOS WHERE CODIGO = ?");
-$statement->bind_param('s', $nombre);
-$statement->execute();
-$mysqli->close();
 
 ?> 
   </body>
