@@ -36,12 +36,16 @@
           <!--<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>-->
         </div>
    <div class="container-fluid">
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>     
-
+<div class="form-group">
+                <form class="form-inline" action="connect.php" method="post"> 
+                    Username:<br /> 
+                    <input type="text" name="codigo"/> 
+                    <br /><br /> 
+                    Password:<br /> 
+                    <input type="password" name="password"/> 
+                    <br /><br /> 
+                    <input type="submit"class="btn btn-default btn-xs" value="Login" /> 
+                </form> 
     </div> <!-- /container -->
   
   </body>
