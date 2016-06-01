@@ -20,7 +20,7 @@ $mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "H4NZ0h4tt0r1", "u
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
-$mysqli->query(`SELECT CODIGO, CLAVE  FROM USUARIOS WHERE CODIGO = $cod' )                           
+$mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO = $cod" );                           
 printf("La selección devolvió %d filas.\n", $resultado->num_rows);
 
 
