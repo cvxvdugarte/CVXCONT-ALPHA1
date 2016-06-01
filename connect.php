@@ -16,7 +16,7 @@
   <body>
   <?php
   $cod = $_POST["codigo"];
-$mysqli = new mysqli("mysql.hostinger.es", "u754135709_vddb", "", "u754135709_dbvd");
+$mysqli = new mysqli("");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
