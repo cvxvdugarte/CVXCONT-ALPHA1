@@ -22,7 +22,7 @@ if ($mysqli->connect_errno) {
                             }
 $resultado = $mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO = DEMO" ); 
 $fila = $resultado->fetch_assoc();
-echo $fila['_msg'];
+echo $fila;
 
 
 
