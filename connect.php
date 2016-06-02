@@ -21,8 +21,7 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
 $resultado = $mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO = DEMO" ); 
-$fila = $resultado->fetch_assoc();
-echo $fila;
+echo $resultado;
 
 
 
