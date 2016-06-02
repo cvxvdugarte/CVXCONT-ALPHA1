@@ -22,6 +22,7 @@ if ($mysqli->connect_errno) {
                             }
 $resultado = $mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO = DEMO" ); 
 echo $resultado;
+echo $cod;
 
 
 
