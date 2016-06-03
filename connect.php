@@ -20,9 +20,9 @@ $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
-$resultado = $mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO =$cod"); 
-$resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
-echo $resultados[0];
+$resultado = $mysqli->query("select codigo from usuarios where codigo =$cod"); 
+$resultados = mysqli_fetch_asoc($resultado)
+echo $resultados["codigo"];
 echo $cod;
 /*$nombreConexion = mysqli_connect("mysql.hostinger.es" ,"u754135709_vddb" , "*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 mysqli_ select_db($nombreConexión,"u754135709_dbvd");
