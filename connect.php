@@ -22,8 +22,7 @@ if ($mysqli->connect_errno) {
                             }
 $resultado = $mysqli->query("SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO =$cod"); 
 $resultados = mysqli_fetch_array($resultado, MYSQLI_ASSOC)
-
-echo $resultados['CODIGO'];
+echo $resultados[0];
 echo $cod;
 /*$nombreConexion = mysqli_connect("mysql.hostinger.es" ,"u754135709_vddb" , "*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 mysqli_ select_db($nombreConexión,"u754135709_dbvd");
