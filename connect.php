@@ -22,7 +22,7 @@
  if ($mysqli->connect_errno) {
                      die("Connection failed: " . $mysqli->connect_error); }
 
-echo $q;."<br><br><br><br><br><br>"
+echo $q."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 $mysqli->close();
 
