@@ -23,8 +23,7 @@
                      die("Connection failed: " . $mysqli->connect_error); }
 echo "Connected successfully"; 
 echo $q;
-$stmt = $mysqli->prepare("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = VALUES(?)");
-$stmt->bind_param("s",$cod);
+$stmt = $mysqli->prepare("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $q");
 $stmt->execute();
 $mysqli->close();
 
