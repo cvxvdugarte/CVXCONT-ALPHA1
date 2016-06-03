@@ -24,7 +24,7 @@ $resultado = $mysqli->query('SELECT  `CODIGO`, `CLAVE` FROM `USUARIOS`');
 if ($resultado->num_rows > 0) {
     // output data of each row
     while($row = $resultado->fetch_assoc()) {
-        echo "id: " . $row."<br>";
+        echo "id: " . $row[0]."<br>";
     }
 } else {
     echo "0 results";
