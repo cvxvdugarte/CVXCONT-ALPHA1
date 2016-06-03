@@ -18,19 +18,13 @@
   <?php
  $cod = $_POST["codigo"];
  $q =("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod");
-$mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
-if ($mysqli->connect_errno) {
-   echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;                         }
-$resultado = $mysqli->query($q); 
-echo $resultado;
-$mysqli->close();
-/*$nombreConexion = mysqli_connect("mysql.hostinger.es" ,"u754135709_vddb" , "*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
-mysqli_ select_db($nombreConexión,"u754135709_dbvd");
-$result = mysqli_query($nombreConexion,"SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO ='DEMO");
-mysqli_data_seek ($result, 0);
-$extraido= mysqli_fetch_array($result);
-echo "- Nombre: ".$extraido[0]."<br/>";
-mysqli_close($nombreConexión);*/
+ $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
+ if ($mysqli->connect_errno) {
+                     die("Connection failed: " . $mysqli->connect_error; }
+echo "Connected successfully"; 
+echo $q;
+ $mysqli->close();
+
 ?> 
   </body>
 </html>
