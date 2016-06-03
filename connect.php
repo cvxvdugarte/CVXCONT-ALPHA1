@@ -21,9 +21,8 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
 $resultado = $mysqli->query('SELECT  `CODIGO` FROM `USUARIOS` WHERE `CODIGO` = $_POST["codigo"]'); 
-$reg=mysqli_fetch_array($resultado);
-echo $reg[`CODIGO`];
-
+$fila = $resultado->fetch_row()
+echo $fila;
 $mysqli->close();
 /*$nombreConexion = mysqli_connect("mysql.hostinger.es" ,"u754135709_vddb" , "*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 mysqli_ select_db($nombreConexión,"u754135709_dbvd");
