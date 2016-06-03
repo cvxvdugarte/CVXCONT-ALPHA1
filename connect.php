@@ -21,9 +21,15 @@ if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;
                             }
 $resultado = $mysqli->query("select codigo from usuarios where codigo =$cod"); 
-$resultados = ('mysqli_result', 'fetch_all')
-echo $resultados["codigo"];
-echo $cod;
+if ($resultado->num_rows > 0) {
+    // output data of each row
+    while($row = $resultado->fetch_assoc()) {
+        echo "id: " . $row["codigo"]."<br>";
+    }
+} else {
+    echo "0 results";
+}
+$mysqli->close();
 /*$nombreConexion = mysqli_connect("mysql.hostinger.es" ,"u754135709_vddb" , "*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 mysqli_ select_db($nombreConexión,"u754135709_dbvd");
 $result = mysqli_query($nombreConexion,"SELECT CODIGO , CLAVE  FROM USUARIOS WHERE CODIGO ='DEMO");
