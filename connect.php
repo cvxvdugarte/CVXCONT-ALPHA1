@@ -25,6 +25,7 @@
 echo $q."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 $resultado = mysqli_query($mysqli, $q);
+echo $resultado;
 $mysqli->close();
 
 ?> 
