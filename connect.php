@@ -20,7 +20,7 @@
  $q =("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
  if ($mysqli->connect_errno) {
-                     die("Connection failed: " . $mysqli->connect_error; }
+                     die("Connection failed: " . $mysqli->connect_error); }
 echo "Connected successfully"; 
 echo $q;
  $mysqli->close();
