@@ -17,15 +17,16 @@
   <body class="bodyblack">
   <?php
  $cod = $_POST["codigo"];
- $q =("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod");
+ $q =("SELECT * FROM USUARIOS ");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
  if ($mysqli->connect_errno) {
                      die("Connection failed: " . $mysqli->connect_error); }
 
 echo $q."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
-$resultado = mysqli_query($mysqli, $q);
-echo $resultado;
+$re = $mysqli->query($q);
+$num_resultados=$re->num_rows;
+echo $num_resultados;
 $mysqli->close();
 
 ?> 
