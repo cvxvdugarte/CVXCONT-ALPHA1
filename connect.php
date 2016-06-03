@@ -24,7 +24,7 @@
 echo "Connected successfully"; 
 echo $q;
 $stmt = $mysqli->prepare("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = VALUES(?)");
-$stmt->bind_param($cod);
+$stmt->bind_param("s",$cod);
 $stmt->execute();
 $mysqli->close();
 
