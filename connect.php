@@ -16,7 +16,7 @@
   <body>
   <?php
  $cod = $_POST["codigo"];
- $q ='SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod';
+ $q =("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod");
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: " . $mysqli->connect_error;                         }
