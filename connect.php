@@ -1,19 +1,20 @@
 <!doctype html>
 <html>
-  <head>
+<head>
+<title>CVXCONT</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>CVXCONT by V.Dugarte</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <link href="bootstrap.css" rel="stylesheet">
-    <link href="signin.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    <script src="bootstrap.js"></script>
     <script src="javascripts/respond.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-  </head>
-  <body>
+    <script src="jquery-1.12.4.min.js"></script>
+    <link href="estilosvdugarte.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+</head>
+  <body class="bodyblack">
   <?php
  $cod = $_POST["codigo"];
  $q =("SELECT  CODIGO FROM USUARIOS WHERE CODIGO = $cod");
