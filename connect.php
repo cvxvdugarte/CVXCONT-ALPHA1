@@ -26,13 +26,11 @@ echo $consulta."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 $resultado = $mysqli->query($consulta);
 $num_resultados=$re->num_rows;
-echo $num_resultados;
-echo "Orden inverso...\n";
-for ($num_fila = $resultado->num_rows - 1; $num_fila >= 0; $num_fila--) {
-    $resultado->data_seek($num_fila);
+
+    //$resultado->data_seek($num_fila);
     $fila = $resultado->fetch_assoc();
     echo " id = " . $fila['CODIGO'] . "\n";
-}
+
 
 $mysqli->close();
 ?> 
