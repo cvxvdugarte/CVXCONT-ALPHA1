@@ -27,6 +27,7 @@ echo "Connected successfully";
 $re = $mysqli->query($q);
 $num_resultados=$re->num_rows;
 echo $num_resultados;
+mysqli_fetch_all($re,MYSQLI_ASSOC);
 $mysqli->close();
 
 ?> 
