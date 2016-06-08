@@ -17,20 +17,23 @@
   <body class="bodyblack">
   <?php
  $cod = $_POST["codigo"];
- $q =("SELECT * FROM USUARIOS ");
+ $consulta =("SELECT CODIGO FROM USUARIOS ");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
  if ($mysqli->connect_errno) {
                      die("Connection failed: " . $mysqli->connect_error); }
 
-echo $q."<br><br><br><br><br><br>";
+echo $consulta."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
-$re = $mysqli->query($q);
+$resultado = $mysqli->query($consulta);
 $num_resultados=$re->num_rows;
 echo $num_resultados;
-$re->data_seek(0);
-while ($fila = $re->fetch_assoc()) {
-    echo " id = " . $fila['id'] . "\n";
+echo "Orden inverso...\n";
+for ($num_fila = $resultado->num_rows - 1; $num_fila >= 0; $num_fila--) {
+    $resultado->data_seek($num_fila);
+    $fila = $resultado->fetch_assoc();
+    echo " id = " . $fila['CODIGO'] . "\n";
 }
+
 $mysqli->close();
 ?> 
 </body>
