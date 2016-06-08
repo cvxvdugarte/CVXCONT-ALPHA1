@@ -30,10 +30,8 @@ echo "Connected successfully";
 $resultado = $mysqli->query($consulta);
 while($row = $resultado->fetch_assoc()) {
         echo "id: " . $row["codigo"]. " - Name: " . $row["password"]. "<br>";
-    }
- else {
-    echo "0 results";
-}
+   
+                                         } 
 /*if (!$resultado) {
     throw new Exception("Database Error [{$mysqli->errno}] {$mysqli->error}");
 }*/
