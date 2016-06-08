@@ -30,9 +30,9 @@ echo "Connected successfully";
 $resultado = $mysqli->query($consulta);
 //array mysqli_result::fetch_assoc ( void )
 
-if (!$resultado) {
+/*if (!$resultado) {
     throw new Exception("Database Error [{$mysqli->errno}] {$mysqli->error}");
-}
+}*/
 $num_resultados=$resultado->num_rows;
 
     //$resultado->data_seek($num_fila);
