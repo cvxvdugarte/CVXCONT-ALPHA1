@@ -36,7 +36,7 @@ $resultado = $mysqli->query($consulta);
 $num_resultados=$resultado->num_rows;
 
     //$resultado->data_seek($num_fila);
-    $REGISTRO = $resultado->mysql_fetch_assoc();
+    $REGISTRO =$mysqli->mysql_fetch_assoc();
     $USUARIO = $REGISTRO(0);
     $CLAVE = $REGISTRO(1);
     echo $USUARIO.$CLAVE;
