@@ -31,7 +31,7 @@ $resultado = $mysqli->query($consulta);
 while($row = $resultado->fetch_assoc()) {
         echo "id: " . $row["codigo"]. " - Name: " . $row["password"]. "<br>";
     }
-} else {
+ else {
     echo "0 results";
 }
 /*if (!$resultado) {
