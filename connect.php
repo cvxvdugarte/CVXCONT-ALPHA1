@@ -17,19 +17,24 @@
   <body class="bodyblack">
   <?php
  $cod = $_POST["codigo"];
- $consulta =("SELECT CODIGO FROM USUARIOS ");
+ $key = $_POST["password"];
+ $consulta =("SELECT CODIGO, CLAVE FROM USUARIOS WHERE CODIGO = $cod AND CLAVE = $key ");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
  if ($mysqli->connect_errno) {
                      die("Connection failed: " . $mysqli->connect_error); }
 
 echo $consulta."<br><br><br><br><br><br>";
+echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 $resultado = $mysqli->query($consulta);
 $num_resultados=$re->num_rows;
 
     //$resultado->data_seek($num_fila);
-    $fila = $resultado->fetch_assoc();
-    echo " id = " . $fila['CODIGO'] . "\n";
+    $REGISTRO = $resultado->fetch_assoc();
+    $USUARIO = $REGISTRO(0);
+    $CLAVE = $REGISTRO(1);
+    echo $USUARIO.$CLAVE;
+  
 
 
 $mysqli->close();
