@@ -32,12 +32,8 @@ mysqli_fetch_all($re,MYSQLI_ASSOC);
 
 $re->data_seek(0);
 while ($fila = $re->fetch_assoc()) {
-    echo " id = " . $fila['id'] . "\n";
-
-
+echo " id = " . $fila['id'] . "\n";}
 $mysqli->close();
-
 ?> 
-  </body>
+</body>
 </html>
-
