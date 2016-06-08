@@ -28,9 +28,8 @@ echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 $resultado = $mysqli->query($consulta);
-array mysqli_result::fetch_assoc ( void )
-   
-                                         } 
+//array mysqli_result::fetch_assoc ( void )
+
 if (!$resultado) {
     throw new Exception("Database Error [{$mysqli->errno}] {$mysqli->error}");
 }
