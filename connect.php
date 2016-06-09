@@ -27,7 +27,7 @@ echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 //$resultado = $mysqli->query($consulta);
-$resultado=mysqli_query($mysqli,$consulta)
+$resultado=mysqli_query($mysqli,$consulta);
   
 
 
