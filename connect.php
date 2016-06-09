@@ -25,21 +25,7 @@ if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
 echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
-//$resultado = $mysqli->query($consulta);
- /* if ($resultado=mysqli_query($mysqli,$consulta))
-  {
-  // Seek to row number 15
-  mysqli_data_seek($resultado,1);
-   echo "great!";
-  // Fetch row
-  $row=mysqli_fetch_row($resultado);
-  mysqli_fetch_all($resultado);
-
-  printf ("Lastname: %s Age: %s\n", $row[0]);
-
-  // Free result set
-  mysqli_free_result($resultado);
-}*/
+mysqli_autocommit($mysqli,TRUE);
 $resultado=mysqli_query($mysqli,$consulta,MYSQLI_STORE_RESULT);
 echo $resultado;
 
