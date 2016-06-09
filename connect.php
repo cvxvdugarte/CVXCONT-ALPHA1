@@ -21,9 +21,8 @@
  //"SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOSWHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key
  $consulta =("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOS");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
- if ($mysqli->connect_errno) {
+ if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
                      die("Connection failed: " . $mysqli->connect_error); }
-
 echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
@@ -33,13 +32,12 @@ $resultado = $mysqli->query($consulta);
 /*if (!$resultado) {
     throw new Exception("Database Error [{$mysqli->errno}] {$mysqli->error}");
 }*/
-$num_resultados=$resultado->num_rows;
-
+/*$num_resultados=$resultado->num_rows;
     //$resultado->data_seek($num_fila);
     $REGISTRO =$mysqli->mysql_fetch_assoc();
     $USUARIO = $REGISTRO(0);
     $CLAVE = $REGISTRO(1);
-    echo $USUARIO.$CLAVE;
+    echo $USUARIO.$CLAVE;*/
   
 
 
