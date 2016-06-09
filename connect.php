@@ -20,12 +20,12 @@ $cod = $_POST["codigo"];
 $key = $_POST["password"];
 $consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key");
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
-if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
+if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
 echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
-mysqli_autocommit($mysqli,TRUE);
+
 $resultado=mysqli_query($mysqli,$consulta,MYSQLI_STORE_RESULT);
 echo $resultado;
 
