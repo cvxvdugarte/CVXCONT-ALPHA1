@@ -29,12 +29,12 @@ echo "Connected successfully";
   if ($resultado=mysqli_query($mysqli,$consulta))
   {
   // Seek to row number 15
-  mysqli_data_seek($resultado,0);
+  mysqli_data_seek($resultado,1);
 
   // Fetch row
   $row=mysqli_fetch_row($resultado);
 
-  printf ("Lastname: %s Age: %s\n", $row[0], $row[1]);
+  printf ("Lastname: %s Age: %s\n", $row[0]);
 
   // Free result set
   mysqli_free_result($resultado);
