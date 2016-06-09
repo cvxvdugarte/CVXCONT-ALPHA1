@@ -30,7 +30,7 @@ echo "Connected successfully";
   {
   // Seek to row number 15
   mysqli_data_seek($resultado,1);
-
+   echo "great!";
   // Fetch row
   $row=mysqli_fetch_row($resultado);
 
