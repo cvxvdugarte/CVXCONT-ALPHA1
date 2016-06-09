@@ -33,6 +33,7 @@ echo "Connected successfully";
    echo "great!";
   // Fetch row
   $row=mysqli_fetch_row($resultado);
+  mysqli_fetch_all($resultado);
 
   printf ("Lastname: %s Age: %s\n", $row[0]);
 
