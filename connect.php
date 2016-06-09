@@ -18,8 +18,8 @@
   <?php
  $cod = $_POST["codigo"];
  $key = $_POST["password"];
- //"SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOSWHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key
- $consulta =("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOS");
+ $consulta= ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOSWHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key);
+ //$consulta =("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOS");
  $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
  if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
                      die("Connection failed: " . $mysqli->connect_error); }
