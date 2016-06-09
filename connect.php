@@ -26,18 +26,8 @@
 echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
-$resultado = $mysqli->query($consulta);
-//array mysqli_result::fetch_assoc ( void )
-
-/*if (!$resultado) {
-    throw new Exception("Database Error [{$mysqli->errno}] {$mysqli->error}");
-}*/
-/*$num_resultados=$resultado->num_rows;
-    //$resultado->data_seek($num_fila);
-    $REGISTRO =$mysqli->mysql_fetch_assoc();
-    $USUARIO = $REGISTRO(0);
-    $CLAVE = $REGISTRO(1);
-    echo $USUARIO.$CLAVE;*/
+//$resultado = $mysqli->query($consulta);
+$resultado=mysqli_query($mysqli,$consulta)
   
 
 
