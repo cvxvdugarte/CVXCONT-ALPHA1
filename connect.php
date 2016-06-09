@@ -27,7 +27,8 @@ echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 
 $resultado=mysqli_query($mysqli,$consulta,MYSQLI_STORE_RESULT);
-echo $resultado;
+$row = mysqli_fetch_row($resultado);
+if(!$row){echo "bad";}
 
 $mysqli->close();
 ?> 
