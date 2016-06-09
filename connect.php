@@ -16,19 +16,30 @@
 </head>
   <body class="bodyblack">
   <?php
- $cod = $_POST["codigo"];
- $key = $_POST["password"];
- $consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOSWHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key");
- //$consulta =("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOS");
- $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
- if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
+$cod = $_POST["codigo"];
+$key = $_POST["password"];
+$consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM USUARIOSWHERE `USUARIOS`.`CODIGO` = $cod AND `USUARIOS`.`CLAVE` = $key");
+$mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
+if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,FALSE);
                      die("Connection failed: " . $mysqli->connect_error); }
 echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 //$resultado = $mysqli->query($consulta);
-$resultado=mysqli_query($mysqli,$consulta);
-  
+  if ($resultado=mysqli_query($mysqli,$consulta))
+  {
+  // Seek to row number 15
+  mysqli_data_seek($resultado,0);
+
+  // Fetch row
+  $row=mysqli_fetch_row($resultado);
+
+  printf ("Lastname: %s Age: %s\n", $row[0], $row[1]);
+
+  // Free result set
+  mysqli_free_result($resultado);
+}
+
 
 
 $mysqli->close();
