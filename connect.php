@@ -41,7 +41,7 @@ echo "Connected successfully";
   mysqli_free_result($resultado);
 }*/
 $resultado=mysqli_query($mysqli,$consulta);
-$fieldinfo=mysqli_fetch_field($resultado);
+$row=mysqli_fetch_row($resultado);
 
 $mysqli->close();
 ?> 
