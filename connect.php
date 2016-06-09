@@ -40,7 +40,7 @@ echo "Connected successfully";
   // Free result set
   mysqli_free_result($resultado);
 }*/
-$resultado=mysqli_query($mysqli,$consulta)
+$resultado=mysqli_query($mysqli,$consulta);
  mysqli_fetch_all($resultado);
 
 $mysqli->close();
