@@ -22,7 +22,7 @@ function opString($1str) {
 $cod = $_POST["codigo"];
 $key = $_POST["password"];
 $cod =opString($cod);
-$consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` ="$cod" AND `USUARIOS`.`CLAVE` = `$key` LIMIT 10;");
+$consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` =$cod AND `USUARIOS`.`CLAVE` = `$key` LIMIT 10;");
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
