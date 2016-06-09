@@ -26,7 +26,7 @@ echo $consulta."<br><br><br><br><br><br>";
 echo $cod.$key."<br><br><br><br><br><br>";
 echo "Connected successfully"; 
 //$resultado = $mysqli->query($consulta);
-  if ($resultado=mysqli_query($mysqli,$consulta))
+ /* if ($resultado=mysqli_query($mysqli,$consulta))
   {
   // Seek to row number 15
   mysqli_data_seek($resultado,1);
@@ -39,9 +39,9 @@ echo "Connected successfully";
 
   // Free result set
   mysqli_free_result($resultado);
-}
-
-
+}*/
+$resultado=mysqli_query($mysqli,$consulta)
+ mysqli_fetch_all($resultado);
 
 $mysqli->close();
 ?> 
