@@ -25,7 +25,7 @@
     <th>Activo</th>
   </tr>
   <tr>
-    <td><from id="cia">
+    <td><from id="cia" action="cia.php">
         <input type="text" id="nomcia">
     </td>
     <td><from>
@@ -36,7 +36,7 @@
         <input type="checkbox" id="activo"></td>
   </tr>
 </table>
-<button type="submit" form="cia" value="Submit" action="cia.php">Submit</button>
+<button type="submit" form="cia" value="Submit" >Submit</button>
 </div>
 </div>
   <?php
