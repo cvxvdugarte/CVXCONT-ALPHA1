@@ -28,6 +28,7 @@ $stmt->bind_param("ss",$cod,$key);
 $stmt->execute();
 $stmt->bind_result($a,$b);
 $stmt->fetch();
+echo $stmt->query();
 printf("%s is in district %s\n",$a,$b);
  $stmt->close();
 }
