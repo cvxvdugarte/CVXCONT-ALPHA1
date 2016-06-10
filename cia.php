@@ -72,9 +72,12 @@ $stmt->execute();
 //$stmt->bind_result($a,$b);
 $stmt->fetch();
  $stmt->close();
- echo "good job";
+ <script languaje="javascript"> 
+document.write("registro guardado"); 
+</script> 
 }
 $mysqli->close();
+
 ?>
 
  
