@@ -16,22 +16,21 @@
 </head>
   <body class="bodyblack">
   <?php
-
 $cod = $_POST["codigo"];
 $key = $_POST["password"];
-
-$consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` ='$cod' AND `USUARIOS`.`CLAVE` ='$key' LIMIT 10;");
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
-echo $consulta."<br><br><br><br><br><br>";
-echo $cod.$key."<br><br><br><br><br><br>";
-echo "Connected successfully"; 
-
-$resultado=mysqli_query($mysqli,$consulta,MYSQLI_STORE_RESULT);
-$row = mysqli_fetch_row($resultado);
-if(!$row){echo "bad";}
-echo $row[0].$row[1];
+                     
+if ($stmt = $mysqli->prepare("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` ='?' AND `USUARIOS`.`CLAVE` ='?' LIMIT 10;")){                     
+$stmt->bind_param("s", $cod);
+$stmt->bind_param("s", $key);
+$stmt->execute();
+$stmt->bind_result($a,$b);
+$stmt->fetch();
+printf("%s is in district %s\n",$a,$b);
+ $stmt->close();
+}
 
 $mysqli->close();
 ?> 
