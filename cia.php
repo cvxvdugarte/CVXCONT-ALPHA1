@@ -19,7 +19,7 @@
         <div class="jumbotron">  
 <FORM name="registro" method=post action="cia.php">
 Registro de cia
-<table  class="table table-bordered">
+<table  class="table table-bordered table-responsive ">
 <TR>
 	<TD>nombre</TD>
 	<TD>
@@ -47,7 +47,7 @@ Registro de cia
     <INPUT type=text name="rif">
 	</TD>
 </TR>
-<br> <input type="button" class="btn btn-info" value="Input Button">
+<br> <input type="button" class="btn btn-info" value="guardar">
 </TABLE>
 </FORM>
  
