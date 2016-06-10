@@ -74,7 +74,7 @@ $stmt->fetch();
  $stmt->close();
  ?>
  <script languaje="javascript"> 
-document.write("registro guardado"); 
+console.log("registro guardado"); 
 </script> 
 <?
 }
