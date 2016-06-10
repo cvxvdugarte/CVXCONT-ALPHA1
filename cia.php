@@ -17,26 +17,39 @@
   <body class="bodyblack">
       <div class="container">
         <div class="jumbotron">  
-<table style="width:100%">
-  <tr>
-    <th>nombre de cia</th>
-    <th>Direccion</th> 
-    <th>Cedula_rif</th>
-    <th>Activo</th>
-  </tr>
-  <tr>
-    <td><from id="cia" action="cia.php" method="post">
-        <input type="text" id="nomcia">
-    </td>
-    <td><from>
-        <input type="text" id="dir"></td> 
-    <td><from>
-        <input type="text" id="cedula"></td>
-        <td><from>
-        <input type="checkbox" id="activo"></td>
-  </tr>
-</table>
-<button type="submit" form="cia" value="Submit" >Submit</button>
+<FORM method=post action="cia.php">
+Registro de cia
+<TABLE BORDER=0>
+<TR>
+	<TD>nombre</TD>
+	<TD>
+	<INPUT type=text name="nombre">
+	</TD>
+</TR>
+
+<TR>
+	<TD>direccion</TD>
+	<TD>
+	<INPUT type=text name="dir">
+	</TD>
+</TR>
+
+<TR>
+	<TD>activo</TD>
+	<TD>
+	<br>activo: <INPUT type=checkbox name="activo" value=1>
+	</TD>
+</TR>
+
+<TR>
+	<TD>cedula rif</TD>
+	<TD>
+    <INPUT type=text name="rif">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+ 
 </div>
 </div>
   <?php
