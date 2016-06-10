@@ -62,14 +62,19 @@ if($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
 $nomcia=$_POST["nombre"];
 $dir=$_POST["dir"];
-$cedula=$_POST["activo"];
-$activo=$_POST["rif"];
-$cia = array ($nomcia,$dir,$cedula,$activo); 
-$row = 0;
-while ($row < 5){
-echo $cia[$row];
- $row++;	
+$cedula=$_POST["rif"];
+$activo=$_POST["activo"];
+//$cia = array ($nomcia,$dir,$cedula,$activo); 
+
+if($stmt = $mysqli->prepare("INSERT INTO `CIA`(`CIA_ID`, `NOMBRE`, `DIRECCION`, `CEDULA_RIF`, `ACTIVO`) VALUES (?,?,?,?)")){                     
+$stmt->bind_param("sssi",$nomcia,$dir,$cedula,$activo);
+$stmt->execute();
+//$stmt->bind_result($a,$b);
+$stmt->fetch();
+ $stmt->close();
 }
+$mysqli->close();
+?>
 
 ?> 
 </body>
