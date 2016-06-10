@@ -25,7 +25,7 @@
     <th>Activo</th>
   </tr>
   <tr>
-    <td><from>
+    <td><from id="cia">
         <input type="text" id="nomcia">
     </td>
     <td><from>
@@ -35,13 +35,20 @@
         <td><from>
         <input type="checkbox" id="activo"></td>
   </tr>
-</table
+</table>
+<button type="submit" form="cia" value="Submit">Submit</button>
 </div>
 </div>
   <?php
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
+$nomcia=$_POST["nomcia"];
+$dir=$_POST["dir"];
+$cedula=$_POST["cedula"];
+$activo=$_POST["activo"];
+$cia = array ($nomcia,$dir,$cedula,$activo); 
+echo $cia[0;]
 ?> 
 </body>
 </html>
