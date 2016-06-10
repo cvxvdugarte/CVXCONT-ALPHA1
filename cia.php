@@ -65,7 +65,7 @@ $dir=$_POST["dir"];
 $cedula=$_POST["activo"];
 $activo=$_POST["rif"];
 $cia = array ($nomcia,$dir,$cedula,$activo); 
-($row = 0
+$row = 0;
 while ($row < 5){
 echo $cia[$row];
  $row++;	
