@@ -15,11 +15,23 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
   <body class="bodyblack">
+<table style="width:100%">
+  <tr>
+    <th>nombre de cia</th>
+    <th>Direccion</th> 
+    <th>Cedula_rif</th>
+    <th>Activo</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>    
   <?php
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
-
 ?> 
 </body>
 </html>
