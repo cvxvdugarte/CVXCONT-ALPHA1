@@ -25,7 +25,7 @@
     <th>Activo</th>
   </tr>
   <tr>
-    <td><from id="cia" action="cia.php">
+    <td><from id="cia" action="cia.php" method="post">
         <input type="text" id="nomcia">
     </td>
     <td><from>
