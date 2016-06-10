@@ -31,7 +31,7 @@ echo "Connected successfully";
 $resultado=mysqli_query($mysqli,$consulta,MYSQLI_STORE_RESULT);
 $row = mysqli_fetch_row($resultado);
 if(!$row){echo "bad";}
-echo $row;
+echo $row[0].$row[1];
 
 $mysqli->close();
 ?> 
