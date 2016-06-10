@@ -23,8 +23,8 @@ if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
                      
 if ($stmt = $mysqli->prepare("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` ='?' AND `USUARIOS`.`CLAVE` ='?' LIMIT 10;")){                     
-$stmt->bind_param("s", $cod);
-$stmt->bind_param("s", $key);
+$stmt->bind_param($cod, $key);
+//$stmt->bind_param("s", $key);
 $stmt->execute();
 $stmt->bind_result($a,$b);
 $stmt->fetch();
