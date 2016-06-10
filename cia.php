@@ -47,7 +47,10 @@ Registro de cia
     <INPUT type=text name="rif">
 	</TD>
 </TR>
-<br> <input type="button" class="btn btn-info" value="guardar">
+<br> 
+<td>
+<input type="submit"class="btn class="btn btn-primary btn-lg"" value="guardar" />
+</td>
 </TABLE>
 </FORM>
  
