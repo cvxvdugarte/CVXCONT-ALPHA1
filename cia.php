@@ -48,7 +48,7 @@ $dir=$_POST["dir"];
 $cedula=$_POST["cedula"];
 $activo=$_POST["activo"];
 $cia = array ($nomcia,$dir,$cedula,$activo); 
-echo $cia[0;]
+echo $cia[0];
 ?> 
 </body>
 </html>
