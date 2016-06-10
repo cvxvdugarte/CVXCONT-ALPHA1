@@ -60,12 +60,14 @@ Registro de cia
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
 if($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
-$nomcia=$_POST["nomcia"];
+$nomcia=$_POST["nombre"];
 $dir=$_POST["dir"];
-$cedula=$_POST["cedula"];
-$activo=$_POST["activo"];
+$cedula=$_POST["activo"];
+$activo=$_POST["rif"];
 $cia = array ($nomcia,$dir,$cedula,$activo); 
-echo $cia[0];
+while ($row = 0, $row = 5, $row++){
+echo $cia[$row];}
+
 ?> 
 </body>
 </html>
