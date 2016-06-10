@@ -19,20 +19,15 @@
 $cod = $_POST["codigo"];
 $key = $_POST["password"];
 $mysqli = new mysqli("mysql.hostinger.es","u754135709_vddb","*#L4S3PT1M4D3LM4DR1D","u754135709_dbvd");
-if ($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
+if($mysqli->connect_errno) {mysqli_autocommit($mysqli,TRUE);
                      die("Connection failed: " . $mysqli->connect_error); }
-                     
-if ($stmt = $mysqli->prepare("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` =? AND `USUARIOS`.`CLAVE` =? LIMIT 10;")){                     
+if($stmt = $mysqli->prepare("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` =? AND `USUARIOS`.`CLAVE` =? LIMIT 10;")){                     
 $stmt->bind_param("ss",$cod,$key);
-//$stmt->bind_param("s", $key);
 $stmt->execute();
 $stmt->bind_result($a,$b);
 $stmt->fetch();
-
-echo $a.$b;
  $stmt->close();
 }
-
 $mysqli->close();
 ?> 
 </body>
