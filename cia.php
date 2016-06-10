@@ -36,7 +36,7 @@
         <input type="checkbox" id="activo"></td>
   </tr>
 </table>
-<button type="submit" form="cia" value="Submit">Submit</button>
+<button type="submit" form="cia" value="Submit">Submit action="cia.php"</button>
 </div>
 </div>
   <?php
