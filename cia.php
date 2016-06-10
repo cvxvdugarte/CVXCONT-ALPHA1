@@ -66,7 +66,7 @@ $cedula=$_POST["rif"];
 $activo=$_POST["activo"];
 //$cia = array ($nomcia,$dir,$cedula,$activo); 
 
-if($stmt = $mysqli->prepare("INSERT INTO `CIA`(`CIA_ID`, `NOMBRE`, `DIRECCION`, `CEDULA_RIF`, `ACTIVO`) VALUES (?,?,?,?)")){                     
+if($stmt = $mysqli->prepare("INSERT INTO `CIA`( `NOMBRE`, `DIRECCION`, `CEDULA_RIF`, `ACTIVO`) VALUES (?,?,?,?)"){                     
 $stmt->bind_param("sssi",$nomcia,$dir,$cedula,$activo);
 $stmt->execute();
 //$stmt->bind_result($a,$b);
@@ -76,6 +76,6 @@ $stmt->fetch();
 $mysqli->close();
 ?>
 
-?> 
+ 
 </body>
 </html>
