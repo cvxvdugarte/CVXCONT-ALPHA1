@@ -17,7 +17,7 @@
   <body class="bodyblack">
   <?php
 
-$cod = $_POST["codigo"];
+$cod = ".$_POST["codigo"].";
 $key = $_POST["password"];
 
 $consulta = ("SELECT `USUARIOS`.`CODIGO`,`USUARIOS`.`CLAVE` FROM `USUARIOS` WHERE `USUARIOS`.`CODIGO` =$cod AND `USUARIOS`.`CLAVE` = `$key` LIMIT 10;");
