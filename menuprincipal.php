@@ -16,7 +16,7 @@
 </head>
   <body class="bodyblack">
     <?
-    echo $GLOBALS['a'];
+    echo $_POST["codigo"];
     ?>
    </body>
 </html>
