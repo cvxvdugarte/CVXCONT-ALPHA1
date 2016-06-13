@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
-  <body class="bodyblack">
+  <body>
     <?
     echo $_POST["codigo"];
     ?>
