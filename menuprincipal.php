@@ -16,7 +16,7 @@
 </head>
   <body class="bodyblack">
     <?
-    echo $GLOBALS['USER'];
+    echo $GLOBALS['a'];
     ?>
    </body>
 </html>
