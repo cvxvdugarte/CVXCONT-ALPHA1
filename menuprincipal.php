@@ -15,6 +15,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
   <body class="bodyblack">
-    
+    <?
+    echo $GLOBALS['USER'];
+    ?>
    </body>
 </html>
