@@ -16,7 +16,7 @@
 </head>
   <body>
     <?
-    echo $_POST["codigo"];
+    echo $_POST["aut"];
     ?>
    </body>
 </html>
