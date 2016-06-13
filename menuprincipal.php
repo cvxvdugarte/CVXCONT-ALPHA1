@@ -18,6 +18,7 @@
     <?
     include ("connect.php");
     echo $_SESSION["USER"];
+    session_destroy(); 
     ?>
    </body>
 </html>
