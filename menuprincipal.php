@@ -16,7 +16,7 @@
 </head>
   <body>
     <?
-    echo $_POST["aut"];
+    echo $_SESSION["USER"];
     ?>
    </body>
 </html>
