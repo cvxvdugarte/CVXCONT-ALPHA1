@@ -16,6 +16,7 @@
 </head>
   <body>
     <?
+    include ("connect.php");
     echo $_SESSION["USER"];
     ?>
    </body>
