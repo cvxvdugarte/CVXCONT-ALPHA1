@@ -21,88 +21,51 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MENUPRINCIPAL</a>
+    </div>
     <ul class="nav navbar-nav">
-  <!--<button type="button" class="btn btn-primary">PERSONAS</button>-->
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">PERSONAS
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">REGISTRO DE PERSONAS</a></li>
-    <li><a href="#">REGISTRO DE USUARIOS</a></li>
-    <li><a href="#">REGISTRO DE PROVEEDORES</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PERSONAS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">REGISTRO DE PERSONAS</a></li>
+          <li><a href="#">REGISTRO DE USUARIOS</a></li>
+         <li><a href="#">REGISTRO DE PROVEEDORES</a></li>
+        </ul>
+      </li>
+  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CXC <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">REGISTRO DE FACTURAS</a></li>
+          <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
+          <li><a href="#">REGISTRO DE CRUCES</a></li>
+        </ul>
+</li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CXP <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">REGISTRO DE FACTURAS</a></li>
+          <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
+          <li><a href="#">REGISTRO DE CRUCES</a></li>
+          <li><a href="#">REPORTES</a></li>
+        </ul>
+        </li>
+     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CXC <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">REGISTRO DE FACTURAS</a></li>
+          <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
+          <li><a href="#">REGISTRO DE CRUCES</a></li>
+        </ul>
+</li>
 
-  <button type="button" class="btn btn-primary">CXC</button>-->
-   <div class="dropdown-menu-right">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">CXC
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">REGISTRO DE FACTURAS</a></li>
-    <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
-    <li><a href="#">REGISTRO DE CRUCES</a></li>
-     <li><a href="#">REPORTES</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
-  <button type="button" class="btn btn-primary">CXP</button>-->
-   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">CXP
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">REGISTRO DE FACTURAS</a></li>
-    <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
-    <li><a href="#">REGISTRO DE CRUCES</a></li>
-     <li><a href="#">REPORTES</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
-  <button type="button" class="btn btn-primary">TESRORERIA</button>-->
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">CXP
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">COBRANZA</a></li>
-    <li><a href="#">BANCOS</a></li>
-     <li><a href="#">REPORTES</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
-  <button type="button" class="btn btn-primary">CONTABILIDAD</button>-->
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">CONTABILIDAD
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">PLANES DE CUENTA</a></li>
-    <li><a href="#">CUENTAS</a></li>
-     <li><a href="#">REPORTES</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
-  <button type="button" class="btn btn-primary">ADMINISTRACION DEL SISTEMA</button>-->
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ADMINISTRACION DEL SISTEMA
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">INFORMES DE ACTIVIDAD</a></li>
-    <li><a href="#">PERMISOS DE USUARIOS</a></li>
-     <li><a href="#">OTROS</a></li>
-  </ul>
-</div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////
-  <a href="index.html"><button type="button" class="btn btn-primary">SALIR</button></a>-->
-   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SALIR
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="index.html">salir</a></li>
-  </ul>
-  </ul>
-</div>
-
-</div>
+   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESORERIA <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">COBRANZA</a></li>
+          <li><a href="#">BANCOS</a></li>
+          <li><a href="#">REPORTES</a></li>
+        </ul>
+    </li>
+    </ul>
+  </div>
 </nav>
    </body>
 </html>
