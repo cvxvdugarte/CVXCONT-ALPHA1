@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <!--<link rel="stylesheet" href="stylesheets/github-dark.css">-->
     <link href="bootstrap.css" rel="stylesheet">
-    <!--<link href="bootstrap-theme.css" rel="stylesheet">-->
+    <link href="bootstrap-theme.css" rel="stylesheet">
     <script src="bootstrap.js"></script>
     <script src="javascripts/respond.js"></script>
     <script src="jquery-1.12.4.min.js"></script>
@@ -21,7 +21,7 @@
     session_destroy(); 
     ?>
       <!--PERSONAS-->    
-    <div class="btn-group-vertical btn-group-lg">
+    <div class="btn-group-vertical btn-group-xs>
       <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
