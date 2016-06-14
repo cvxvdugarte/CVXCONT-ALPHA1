@@ -22,8 +22,7 @@
     ?>
   <div class="container-fluid">
       <!--PERSONAS-->    
-               <div class="btn-group">
-    <div class="btn-group btn-group btn-group-justified">
+    <div class="btn-group-vertical">
       <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
