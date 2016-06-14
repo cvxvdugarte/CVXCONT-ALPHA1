@@ -21,7 +21,7 @@
     session_destroy(); 
     ?>
       <!--PERSONAS-->    
-    <div class="btn-group btn-group-xs">
+    <div class="btn-group-vertical btn-group-xs">
       <button type="button" class="btn btn-default"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
       <button type="button" class="btn btn-default"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
       <button type="button" class="btn btn-default"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
@@ -40,7 +40,6 @@
          <button type="button" class="btn btn-default"><a href="bancos.php">BANCOS</a></button>
          <button type="button" class="btn btn-default"><a href="otros.php">OTROS</a></button>
          <button type="button" class="btn btn-default"><a href="tesororeport.php">REPORTES</a></button>
-         </div>
     <!--CONTABILIDAD-->
           <button type="button" class="btn btn-default"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
           <button type="button" class="btn btn-default"><a href="contabilidad2.php">COMPROBANTES</a></button>
