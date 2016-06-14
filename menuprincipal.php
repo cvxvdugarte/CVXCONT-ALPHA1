@@ -21,7 +21,8 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-    <div class="btn-group-horizontal">
+<nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
   <!--<button type="button" class="btn btn-primary">PERSONAS</button>-->
   <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">PERSONAS
@@ -82,7 +83,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////
   <button type="button" class="btn btn-primary">ADMINISTRACION DEL SISTEMA</button>-->
   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SALIR
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ADMINISTRACION DEL SISTEMA
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
     <li><a href="#">INFORMES DE ACTIVIDAD</a></li>
@@ -93,12 +94,15 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////
   <a href="index.html"><button type="button" class="btn btn-primary">SALIR</button></a>-->
    <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ADMINISTRACION DEL SISTEMA
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SALIR
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
     <li><a href="index.html">salir</a></li>
   </ul>
+  </ul>
 </div>
+
 </div>
+</nav>
    </body>
 </html>
