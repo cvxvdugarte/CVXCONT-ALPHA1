@@ -14,12 +14,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
-  <body>
+  <body class="bodyblack">
     <?
     session_start();
     
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
+    <div class="btn-group-vertical">
+  <button type="button" class="btn btn-primary">PERSONAS</button>
+  <button type="button" class="btn btn-primary">CXC</button>
+  <button type="button" class="btn btn-primary">CXP</button>
+  <button type="button" class="btn btn-primary">TESRORERIA</button>
+  <button type="button" class="btn btn-primary">CONTABILIDAD</button>
+  <button type="button" class="btn btn-primary">ADMINISTRACION DEL SISTEMA</button>
+  <button type="button" class="btn btn-primary">SALIR</button>
+</div>
    </body>
 </html>
