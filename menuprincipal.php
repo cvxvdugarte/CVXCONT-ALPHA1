@@ -18,29 +18,29 @@
       <!--PERSONAS-->    
     <div class="btn-group-vertical btn-group-xs">
       <button type="button" class="btn btn-block" role="button"><a href="cxcregpers.php">PERSONAS</a></li>
-      <button type="button" class="btn btn-primary" role="button"><a href="cxcregusr.php">USUARIOS</a></li>
-      <button type="button" class="btn btn-primary" role="button"><a href="cxcregprov.php">PROVEEDORES</a></li>
+      <button type="button" class="btn btn-block" role="button"><a href="cxcregusr.php">USUARIOS</a></li>
+      <button type="button" class="btn btn-block" role="button"><a href="cxcregprov.php">PROVEEDORES</a></li>
       <!--CXC-->
-         <button type="button" class="btn btn-primary" role="button"><a href="cxcregfac.php">FACTURAS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxcregant.php">ANTICIPOS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxcregcruce.php">CRUCES</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxcreport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxcregfac.php">FACTURAS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxcregant.php">ANTICIPOS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxcregcruce.php">CRUCES</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxcreport.php">REPORTES</a></button>
    <!--CXP-->
-         <button type="button" class="btn btn-primary" role="button"><a href="cxpregfac.php">FACTURAS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxpregant.php">ANTICIPOS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxpregcruce.php">CRUCES</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="cxpreport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxpregfac.php">FACTURAS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxpregant.php">ANTICIPOS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxpregcruce.php">CRUCES</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cxpreport.php">REPORTES</a></button>
    <!--TESORERIA-->
-         <button type="button" class="btn btn-primary" role="button"><a href="cobranza.php">COBRANZA</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="bancos.php">BANCOS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="otros.php">OTROS</a></button>
-         <button type="button" class="btn btn-primary" role="button"><a href="tesororeport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="cobranza.php">COBRANZA</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="bancos.php">BANCOS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="otros.php">OTROS</a></button>
+         <button type="button" class="btn btn-block" role="button"><a href="tesororeport.php">REPORTES</a></button>
     <!--CONTABILIDAD-->
-          <button type="button" class="btn btn-primary" role="button"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
-          <button type="button" class="btn btn-primary" role="button"><a href="contabilidad2.php">COMPROBANTES</a></button>
-          <button type="button" class="btn btn-primary" role="button"><a href="contabilidad3.php">REPORTES</a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="contabilidad2.php">COMPROBANTES</a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="contabilidad3.php">REPORTES</a></button>
      <!--SALIR-->     
-          <button type="button" class="btn btn-primary" role="button"><a href="index.html">SALIR<a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="index.html">SALIR<a></button>
   </div>
    </body>
 </html>
