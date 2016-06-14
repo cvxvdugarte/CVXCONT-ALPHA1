@@ -20,14 +20,14 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="menuprincipal.php">MENUPRINCIPAL</a>
     </div>
     <ul class="nav navbar-nav">
   <!--PERSONAS-->    
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">PERSONAS <span class="caret"></span></a>
+      <li class="dropdown active""><a class="dropdown-toggle" data-toggle="dropdown">PERSONAS <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
           <li><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
