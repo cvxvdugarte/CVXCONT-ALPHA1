@@ -21,7 +21,7 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-    <div class="btn-group-vertical">
+    <div class="btn-group-horizontal">
   <!--<button type="button" class="btn btn-primary">PERSONAS</button>-->
   <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">PERSONAS
