@@ -21,7 +21,7 @@
     session_destroy(); 
     ?>
       <!--PERSONAS-->    
-    <div class="btn-group bodyblack">
+    <div class="btn-group-vertical btn-xs bodyblack">
       <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
       <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
