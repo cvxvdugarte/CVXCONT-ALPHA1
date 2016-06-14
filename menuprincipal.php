@@ -22,30 +22,30 @@
     ?>
       <!--PERSONAS-->    
     <div class="btn-group-vertical btn-group-xs">
-      <button type="button" class="btn btn-info"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
-      <button type="button" class="btn btn-info"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
-      <button type="button" class="btn btn-info"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
+      <button type="button" class="btn btn-link"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
+      <button type="button" class="btn btn-link"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
+      <button type="button" class="btn btn-link"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
       <!--CXC-->
-         <button type="button" class="btn btn-info"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
-         <button type="button" class="btn btn-info"><a href="cxcregant.php">REGISTRO DE ANTICIPOS</a></button>
-         <button type="button" class="btn btn-info"><a href="cxcregcruce.php">REGISTRO DE CRUCES</a></button>
-         <button type="button" class="btn btn-info"><a href="cxcreport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-link"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
+         <button type="button" class="btn btn-link"><a href="cxcregant.php">REGISTRO DE ANTICIPOS</a></button>
+         <button type="button" class="btn btn-link"><a href="cxcregcruce.php">REGISTRO DE CRUCES</a></button>
+         <button type="button" class="btn btn-link"><a href="cxcreport.php">REPORTES</a></button>
    <!--CXP-->
-         <button type="button" class="btn btn-info"><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></button>
-         <button type="button" class="btn btn-info"><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></button>
-         <button type="button" class="btn btn-info"><a href="cxpregcruce.php">REGISTRO DE CRUCES</a></button>
-         <button type="button" class="btn btn-info"><a href="cxpreport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-link"><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></button>
+         <button type="button" class="btn btn-link"><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></button>
+         <button type="button" class="btn btn-link"><a href="cxpregcruce.php">REGISTRO DE CRUCES</a></button>
+         <button type="button" class="btn btn-link"><a href="cxpreport.php">REPORTES</a></button>
    <!--TESORERIA-->
-         <button type="button" class="btn btn-info"><a href="cobranza.php">COBRANZA</a></button>
-         <button type="button" class="btn btn-info"><a href="bancos.php">BANCOS</a></button>
-         <button type="button" class="btn btn-info"><a href="otros.php">OTROS</a></button>
-         <button type="button" class="btn btn-info"><a href="tesororeport.php">REPORTES</a></button>
+         <button type="button" class="btn btn-link"><a href="cobranza.php">COBRANZA</a></button>
+         <button type="button" class="btn btn-link"><a href="bancos.php">BANCOS</a></button>
+         <button type="button" class="btn btn-link"><a href="otros.php">OTROS</a></button>
+         <button type="button" class="btn btn-link"><a href="tesororeport.php">REPORTES</a></button>
     <!--CONTABILIDAD-->
-          <button type="button" class="btn btn-info"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
-          <button type="button" class="btn btn-info"><a href="contabilidad2.php">COMPROBANTES</a></button>
-          <button type="button" class="btn btn-info"><a href="contabilidad3.php">REPORTES</a></button>
+          <button type="button" class="btn btn-link"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
+          <button type="button" class="btn btn-link"><a href="contabilidad2.php">COMPROBANTES</a></button>
+          <button type="button" class="btn btn-link"><a href="contabilidad3.php">REPORTES</a></button>
      <!--SALIR-->     
-          <button type="button" class="btn btn-info"><a href="index.html">SALIR<a></button>
+          <button type="button" class="btn btn-link"><a href="index.html">SALIR<a></button>
   </div>
    </body>
 </html>
