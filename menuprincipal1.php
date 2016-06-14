@@ -20,47 +20,35 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="menuprincipal.php">MENUPRINCIPAL</a>
-    </div>
-    <ul class="nav navbar-nav">
-  <!--PERSONAS-->    
-      <li class="dropdown active""><a class="dropdown-toggle" data-toggle="dropdown">PERSONAS <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
-          <li><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
-         <li><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
-        </ul>
-      </li>
-  <!--CXC-->
-  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">CXC <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-          <li><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></li>
-          <li><a href="cxcregant.php">REGISTRO DE ANTICIPOS</a></li>
-          <li><a href="cxcregcruce.php">REGISTRO DE CRUCES</a></li>
-          <li><a href="cxcreport.php">REPORTES</a></li>
-      </ul>
-   </li>
+      <!--PERSONAS-->    
+               <div class="btn-group">
+               <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></button>
+               <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></button>
+               <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></button>
+               </div>
+      <!--CXC-->
+        <div class="btn-group">
+         <button type="button" class="btn btn-primary"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxcregant.php">REGISTRO DE ANTICIPOS</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxcregcruce.php">REGISTRO DE CRUCES</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxcreport.php">REPORTES</a></button>
+         </div>
    <!--CXP-->
-   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >CXP <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></li>
-          <li><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></li>
-          <li><a href="cxpregcruce.php">REGISTRO DE CRUCES</a></li>
-          <li><a href="cxpreport.php">REPORTES</a></li>
-        </ul>
-   </li>
+  <div class="btn-group">
+         <button type="button" class="btn btn-primary"><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxpregcruce.php">REGISTRO DE CRUCES</a></button>
+         <button type="button" class="btn btn-primary"><a href="cxpreport.php">REPORTES</a></button>
+    </div>
    <!--TESORERIA-->
-   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">TESORERIA <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="tesoro1.php">COBRANZA</a></li>
-          <li><a href="bancos.php">BANCOS</a></li>
-          <li><a href="tesororeport.php">REPORTES</a></li>
-        </ul>
-    </li>
-    <!--CONTABILIDAD-->
+   <div class="btn-group">
+         <button type="button" class="btn btn-primary"><a href="cobranza.php">COBRANZA</a></button>
+         <button type="button" class="btn btn-primary"><a href="bancos.php">BANCOS</a></button>
+         <button type="button" class="btn btn-primary"><a href="otros.php">OTROS</a></button>
+         <button type="button" class="btn btn-primary"><a href="tesororeport.php">REPORTES</a></button>
+         </div>
+    <!--CONTABILIDAD
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >CONTABILIDAD <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="contabilidad1.php">PLAN DE CUENTAS<a></li>
@@ -68,7 +56,7 @@
           <li><a href="contabilidad3.php">REPORTES</a></li>
         </ul>
     </li>
-    <!--SALIR-->
+ 
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >SALIR<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="index.html">SALIR<a></li>
@@ -76,6 +64,6 @@
     </li>
     </ul>
   </div>
-</nav>
+</nav>-->
    </body>
 </html>
