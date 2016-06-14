@@ -82,7 +82,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////
   <button type="button" class="btn btn-primary">ADMINISTRACION DEL SISTEMA</button>-->
   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ADMINISTRACION DEL SISTEMA
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SALIR
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
     <li><a href="#">INFORMES DE ACTIVIDAD</a></li>
