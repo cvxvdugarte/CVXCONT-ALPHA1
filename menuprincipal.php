@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>CVXCONT<? echo $_SESSION["USER"];?></title>
+<title>CVXCONT</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
@@ -43,6 +43,8 @@
           <button type="button" class="btn btn-block" role="button"><a href="index.html">SALIR<a></button>
   </div>
   <br>
+  session_start();
   <? echo $_SESSION["USER"];?>
+  
    </body>
 </html>
