@@ -22,8 +22,8 @@
     ?>
       <!--PERSONAS-->    
     <div class="btn-group-vertical btn-group-xs">
-      <button type="button" class="btn btn-default"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
-      <button type="button" class="btn btn-default"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
+      <button type="button" class="btn btn-primary" color="white"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
+      <button type="button" class="btn btn-default text-danger"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
       <button type="button" class="btn btn-default"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
       <!--CXC-->
          <button type="button" class="btn btn-default"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
