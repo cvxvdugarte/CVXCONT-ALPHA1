@@ -4,7 +4,7 @@
 <title>CVXCONT</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <!--<link rel="stylesheet" href="stylesheets/github-dark.css">-->
     <link href="bootstrap.css" rel="stylesheet">
     <link href="bootstrap-theme.css" rel="stylesheet">
     <script src="bootstrap.js"></script>
