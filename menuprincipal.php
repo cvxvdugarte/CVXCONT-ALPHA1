@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <!--<link rel="stylesheet" href="stylesheets/github-dark.css">-->
     <link href="bootstrap.css" rel="stylesheet">
-    <link href="bootstrap-theme.css" rel="stylesheet">
+    <!--<link href="bootstrap-theme.css" rel="stylesheet">-->
     <script src="bootstrap.js"></script>
     <script src="javascripts/respond.js"></script>
     <script src="jquery-1.12.4.min.js"></script>
