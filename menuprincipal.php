@@ -23,52 +23,33 @@
   <div class="container-fluid">
       <!--PERSONAS-->    
                <div class="btn-group">
-    <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    PERSONAS <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
-      <li><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
-      <li><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
-     </ul>
-    </div>
+    <div class="btn-group btn-group btn-group-justified">
+      <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
+      <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
+      <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
       <!--CXC-->
-      
          <button type="button" class="btn btn-primary"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
          <button type="button" class="btn btn-primary"><a href="cxcregant.php">REGISTRO DE ANTICIPOS</a></button>
          <button type="button" class="btn btn-primary"><a href="cxcregcruce.php">REGISTRO DE CRUCES</a></button>
          <button type="button" class="btn btn-primary"><a href="cxcreport.php">REPORTES</a></button>
-  
    <!--CXP-->
-
          <button type="button" class="btn btn-primary"><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></button>
          <button type="button" class="btn btn-primary"><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></button>
          <button type="button" class="btn btn-primary"><a href="cxpregcruce.php">REGISTRO DE CRUCES</a></button>
          <button type="button" class="btn btn-primary"><a href="cxpreport.php">REPORTES</a></button>
-   
    <!--TESORERIA-->
-
          <button type="button" class="btn btn-primary"><a href="cobranza.php">COBRANZA</a></button>
          <button type="button" class="btn btn-primary"><a href="bancos.php">BANCOS</a></button>
          <button type="button" class="btn btn-primary"><a href="otros.php">OTROS</a></button>
          <button type="button" class="btn btn-primary"><a href="tesororeport.php">REPORTES</a></button>
          </div>
-    <!--CONTABILIDAD
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >CONTABILIDAD <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="contabilidad1.php">PLAN DE CUENTAS<a></li>
-          <li><a href="contabilidad2.php">COMPROBANTES</a></li>
-          <li><a href="contabilidad3.php">REPORTES</a></li>
-        </ul>
-    </li>
- 
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >SALIR<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="index.html">SALIR<a></li>
-        </ul>
-    </li>
-    </ul>
+    <!--CONTABILIDAD-->
+          <button type="button" class="btn btn-primary"><a href="contabilidad1.php">PLAN DE CUENTAS<a></button>
+          <button type="button" class="btn btn-primary"><a href="contabilidad2.php">COMPROBANTES</a></button>
+          <button type="button" class="btn btn-primary"><a href="contabilidad3.php">REPORTES</a></button>
+     <!--SALIR-->     
+          <button type="button" class="btn btn-primary"><a href="index.html">SALIR<a></button>
   </div>
-</nav>-->
+  </div>
    </body>
 </html>
