@@ -63,9 +63,15 @@
     <!--CONTABILIDAD-->
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contabilidad.php">CONTABILIDAD <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="contabilidad1.php">PLAN DE CU<a></li>
-          <li><a href="contabilidad2.php">BANCOS</a></li>
+          <li><a href="contabilidad1.php">PLAN DE CUENTAS<a></li>
+          <li><a href="contabilidad2.php">COMPROBANTES</a></li>
           <li><a href="contabilidad3.php">REPORTES</a></li>
+        </ul>
+    </li>
+    <!--SALIR-->
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contabilidad.php">CONTABILIDAD <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">SALIR<a></li>
         </ul>
     </li>
     </ul>
