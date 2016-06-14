@@ -36,7 +36,7 @@
       </li>
   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CXC <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">REGISTRO DE FACTURAS</a></li>
+          <li><a href="cxc.php">REGISTRO DE FACTURAS</a></li>
           <li><a href="#">REGISTRO DE ANTICIPOS</a></li>
           <li><a href="#">REGISTRO DE CRUCES</a></li>
         </ul>
