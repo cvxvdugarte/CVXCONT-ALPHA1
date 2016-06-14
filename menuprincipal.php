@@ -43,8 +43,10 @@
           <button type="button" class="btn btn-block" role="button"><a href="index.html">SALIR<a></button>
   </div>
   <br>
+  
+  <?
   session_start();
-  <? echo $_SESSION["USER"];?>
+  echo $_SESSION["USER"];?>
   
    </body>
 </html>
