@@ -22,11 +22,16 @@
     ?>
   <div class="container-fluid">
       <!--PERSONAS-->    
-               <div class="btn-group btn-group-justified">
-               <button type="button" class="btn btn-primary"><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></button>
-               <button type="button" class="btn btn-primary"><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></button>
-               <button type="button" class="btn btn-primary"><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></button>
-          
+               <div class="btn-group">
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    PERSONAS <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="cxcregpers.php">REGISTRO DE PERSONAS</a></li>
+      <li><a href="cxcregusr.php">REGISTRO DE USUARIOS</a></li>
+      <li><a href="cxcregprov.php">REGISTRO DE PROVEEDORES</a></li>
+     </ul>
+    </div>
       <!--CXC-->
       
          <button type="button" class="btn btn-primary"><a href="cxcregfac.php">REGISTRO DE FACTURAS</a></button>
