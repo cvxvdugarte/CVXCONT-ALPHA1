@@ -44,7 +44,7 @@
       </ul>
    </li>
    <!--CXP-->
-   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cxp.php">CXP <span class="caret"></span></a>
+   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >CXP <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="cxpregfac.php">REGISTRO DE FACTURAS</a></li>
           <li><a href="cxpregant.php">REGISTRO DE ANTICIPOS</a></li>
@@ -53,7 +53,7 @@
         </ul>
    </li>
    <!--TESORERIA-->
-   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="tesoreria.php">TESORERIA <span class="caret"></span></a>
+   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">TESORERIA <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="tesoro1.php">COBRANZA</a></li>
           <li><a href="bancos.php">BANCOS</a></li>
@@ -61,7 +61,7 @@
         </ul>
     </li>
     <!--CONTABILIDAD-->
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contabilidad.php">CONTABILIDAD <span class="caret"></span></a>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >CONTABILIDAD <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="contabilidad1.php">PLAN DE CUENTAS<a></li>
           <li><a href="contabilidad2.php">COMPROBANTES</a></li>
@@ -69,7 +69,7 @@
         </ul>
     </li>
     <!--SALIR-->
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contabilidad.php">CONTABILIDAD <span class="caret"></span></a>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >SALIR<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="index.html">SALIR<a></li>
         </ul>
