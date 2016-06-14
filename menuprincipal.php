@@ -20,7 +20,7 @@
     echo $_SESSION["USER"];
     session_destroy(); 
     ?>
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="menuprincipal.php">MENUPRINCIPAL</a>
