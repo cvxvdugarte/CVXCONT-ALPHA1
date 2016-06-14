@@ -15,6 +15,7 @@
     <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>-->
 </head>
   <body class="bodyblack">
+      <?include 'salir.php';?>
       <!--PERSONAS-->    
     <div class="btn-group-vertical btn-group-xs">
       <button type="button" class="btn btn-block" role="button"><a href="cxcregpers.php">PERSONAS</a></li>
@@ -40,13 +41,8 @@
           <button type="button" class="btn btn-block" role="button"><a href="contabilidad2.php">COMPROBANTES</a></button>
           <button type="button" class="btn btn-block" role="button"><a href="contabilidad3.php">REPORTES</a></button>
      <!--SALIR-->     
-          <button type="button" class="btn btn-block" role="button"><a href="index.html">SALIR<a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="salir.php">SALIR<a></button>
   </div>
-  <br>
-  
-  <?
-  session_start();
-  echo $_SESSION["USER"];?>
-  
+
    </body>
 </html>
