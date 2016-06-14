@@ -35,7 +35,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////
 
   <button type="button" class="btn btn-primary">CXC</button>-->
-   <div class="dropdown">
+   <div class="dropdown-menu-right">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">CXC
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
@@ -90,7 +90,15 @@
      <li><a href="#">OTROS</a></li>
   </ul>
 </div>
-  <a href="index.html"><button type="button" class="btn btn-primary">SALIR</button></a>
+<!-- ///////////////////////////////////////////////////////////////////////////////////
+  <a href="index.html"><button type="button" class="btn btn-primary">SALIR</button></a>-->
+   <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ADMINISTRACION DEL SISTEMA
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="index.html">salir</a></li>
+  </ul>
+</div>
 </div>
    </body>
 </html>
