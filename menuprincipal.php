@@ -28,7 +28,7 @@
   <button type="button" class="btn btn-primary">TESRORERIA</button>
   <button type="button" class="btn btn-primary">CONTABILIDAD</button>
   <button type="button" class="btn btn-primary">ADMINISTRACION DEL SISTEMA</button>
-  <button type="button" class="btn btn-primary">SALIR</button>
+  <a href="index.html"><button type="button" class="btn btn-primary">SALIR</button></a>
 </div>
    </body>
 </html>
