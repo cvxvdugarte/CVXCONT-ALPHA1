@@ -15,7 +15,7 @@
     <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>-->
 </head>
   <body class="bodyblack">
-      <?include 'salir.php';?>
+   
       <!--PERSONAS-->    
     <div class="btn-group-vertical btn-group-xs">
       <button type="button" class="btn btn-block" role="button"><a href="cxcregpers.php">PERSONAS</a></li>
