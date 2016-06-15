@@ -43,6 +43,6 @@
      <!--SALIR-->     
           <button type="button" class="btn btn-block" role="button"><a href="salir.php">SALIR<a></button>
   </div>
-
+<? session_start();  echo $_SESSION["usr"];?> 
    </body>
 </html>
