@@ -41,10 +41,7 @@
           <button type="button" class="btn btn-block" role="button"><a href="contabilidad2.php">COMPROBANTES</a></button>
           <button type="button" class="btn btn-block" role="button"><a href="contabilidad3.php">REPORTES</a></button>
      <!--SALIR-->     
-          <button type="button" class="btn btn-block" role="button"><a href="salir.php">SALIR<a></button>
+          <button type="button" class="btn btn-block" role="button"><a href="salir.php"><? session_start();  echo $_SESSION["usr"];?><a></button>
   </div>
-<div class="jumbotron">  
-<? session_start();  echo $_SESSION["usr"];?> 
-</div>
    </body>
 </html>
