@@ -29,6 +29,7 @@
    while ($b <= $a ){
        echo $personas($b);  
    }
+  }
    $mysqli->close();
   ?>
   </body>
