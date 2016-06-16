@@ -26,9 +26,8 @@
    $stmt->bind_result($personas);
    $stmt->fetch();
    $stmt->close();
-   $a = array_count_values($personas)
-   
-   while ($b <= $a ){echo $personas($b)?><br><?;  $b++;    }
+   $a = array_count_values($personas);
+   while ($b <= $a ){echo $personas($b);   }
    $mysqli->close();
   ?>
   </body>
