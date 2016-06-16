@@ -16,8 +16,9 @@
 </head>
   <body class="bodyblack">
   <? 
-  session_start();
-  echo $_SESSION['usr'];
+  include('objtxxx.php');
+  $myDrive = new myDrive;
+  $myDrive->sesion("o");
   if($stmt = $mysqli->prepare("SELECT * FROM  `PERSONAS` LIMIT 0 , 30;"))
   {                     
    //$stmt->bind_param("ss",$cod,$key);
@@ -28,7 +29,7 @@
    $a = array_count_values($personas);
    while ($b <= $a ){
        echo $personas($b);  
-   }
+                     }
   }
    $mysqli->close();
   ?>
