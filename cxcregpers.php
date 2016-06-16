@@ -15,9 +15,9 @@
     <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>-->
 </head>
   <body class="bodyblack">
-  <? include 'cvx.php';
+  <? 
   session_start();
-  cvx($_SESSION["USER"]);
+  echo $_SESSION['usr'];
   if($stmt = $mysqli->prepare("SELECT * FROM  `PERSONAS` LIMIT 0 , 30;"))
   {                     
    //$stmt->bind_param("ss",$cod,$key);
