@@ -18,7 +18,6 @@
   <? include 'cvx.php';
   session_start();
   cvx($_SESSION["USER"]);
-
   if($stmt = $mysqli->prepare("SELECT * FROM  `PERSONAS` LIMIT 0 , 30;"))
   {                     
    //$stmt->bind_param("ss",$cod,$key);
